@@ -1,0 +1,23 @@
+version: '1.0.0' 
+ 
+dls_settings: 
+  log_filepath: '/tmp/duologsync.log' 
+  log_format: 'JSON' 
+  api: 
+    offset: 30 
+    timeout: 120 
+ 
+servers: 
+  - id: 'USM_Anywhere' 
+    hostname: '13.78.194.57' 
+    port: 601 
+    protocol: TCP 
+ 
+account: 
+  ikey: 'DIPVKZFL2WS4M0ZXLV8P' 
+  skey: 'x5VvNRfXsbCjvxlCNzf0psspFmPwXWXbgQSgQyEV' 
+  hostname: 'api-b18f2591.duosecurity.com' 
+  endpoint_server_mappings: 
+    - endpoints: ['adminaction', 'auth', 'telephony'] 
+      server: 'USM_Anywhere' 
+  is_msp: False
