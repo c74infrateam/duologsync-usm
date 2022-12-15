@@ -9,15 +9,15 @@ dls_settings:
  
 servers: 
   - id: 'USM_Anywhere' 
-    hostname: '13.78.194.57' 
+    hostname: '1.5.3.7' # Use your USM Sensor IP address
     port: 601 
     protocol: TCP 
  
 account: 
-  ikey: 'DIPVKZFL2WS4M0ZXLV8P' 
-  skey: 'x5VvNRfXsbCjvxlCNzf0psspFmPwXWXbgQSgQyEV' 
-  hostname: 'api-b18f2591.duosecurity.com' 
+  ikey: 'AAAAAAAAAAAAAAAAAAA' # From Duo
+  skey: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'  # From Duo
+  hostname: 'api-b33f9999.duosecurity.com' # From Duo
   endpoint_server_mappings: 
     - endpoints: ['adminaction', 'auth', 'telephony'] 
       server: 'USM_Anywhere' 
-  is_msp: False
+  is_msp: False # DO NOT change this value unless instructed
